@@ -1,0 +1,237 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title "Diagrama esquematico de poncho Celda."
+Date "2016-07-04"
+Rev ""
+Comp "Felipe Rey Hernandez"
+Comment1 "Esquematico de modulos para poncho celda para el curso de Diseño de PCB del CESE."
+Comment2 "Licencia GPL V3"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 4400 1350 1200 1250
+U 601F3790
+F0 "HX711" 50
+F1 "HX711.sch" 50
+F2 "E+" I L 4400 1600 50 
+F3 "E-" I L 4400 1750 50 
+F4 "A-" I L 4400 1900 50 
+F5 "A+" I L 4400 2050 50 
+F6 "DT" O R 5600 1750 50 
+F7 "SCK" I R 5600 1950 50 
+F8 "VCC" I R 5600 2150 50 
+F9 "GND" I R 5600 1600 50 
+$EndSheet
+$Sheet
+S 7600 1300 1150 1100
+U 601F5941
+F0 "NodeMCU" 50
+F1 "NodeMCU.sch" 50
+$EndSheet
+$Comp
+L 74xx:CD74HC4067M U_MUX1
+U 1 1 60240E8C
+P 1800 5600
+F 0 "U_MUX1" H 1800 6781 50  0000 C CNN
+F 1 "CD74HC4067M" H 1800 6690 50  0000 C CNN
+F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 2700 4600 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc4067.pdf" H 1450 6450 50  0001 C CNN
+	1    1800 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:CD74HC4067M U_DEMUX1
+U 1 1 60242215
+P 9500 4250
+F 0 "U_DEMUX1" H 9500 5431 50  0000 C CNN
+F 1 "CD74HC4067M" H 9500 5340 50  0000 C CNN
+F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 10400 3250 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc4067.pdf" H 9150 5100 50  0001 C CNN
+	1    9500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 60242C77
+P 1100 6400
+F 0 "R4" H 1170 6446 50  0000 L CNN
+F 1 "10k" H 1170 6355 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 1030 6400 50  0001 C CNN
+F 3 "~" H 1100 6400 50  0001 C CNN
+	1    1100 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 6250 1100 6200
+Wire Wire Line
+	1100 6200 1300 6200
+Wire Wire Line
+	1100 6550 1100 6800
+Wire Wire Line
+	1100 6800 1550 6800
+Wire Wire Line
+	1800 6800 1800 6700
+$Comp
+L Device:R R5
+U 1 1 6024304C
+P 8850 5100
+F 0 "R5" H 8920 5146 50  0000 L CNN
+F 1 "10k" H 8920 5055 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 8780 5100 50  0001 C CNN
+F 3 "~" H 8850 5100 50  0001 C CNN
+	1    8850 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 4850 8850 4850
+Wire Wire Line
+	8850 4850 8850 4950
+Wire Wire Line
+	8850 5250 8850 5400
+Wire Wire Line
+	8850 5400 9150 5400
+Wire Wire Line
+	9500 5400 9500 5350
+Wire Wire Line
+	1800 4250 1800 4600
+Wire Wire Line
+	9500 2950 9500 3250
+$Comp
+L PCB_TP_Prof-rescue:GND #PWR03
+U 1 1 602476EF
+P 1550 6950
+F 0 "#PWR03" H 1550 6950 30  0001 C CNN
+F 1 "GND" H 1550 6880 30  0001 C CNN
+F 2 "" H 1550 6950 60  0000 C CNN
+F 3 "" H 1550 6950 60  0000 C CNN
+	1    1550 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 6950 1550 6800
+Connection ~ 1550 6800
+Wire Wire Line
+	1550 6800 1800 6800
+$Comp
+L PCB_TP_Prof-rescue:GND #PWR04
+U 1 1 60247A91
+P 9150 5600
+F 0 "#PWR04" H 9150 5600 30  0001 C CNN
+F 1 "GND" H 9150 5530 30  0001 C CNN
+F 2 "" H 9150 5600 60  0000 C CNN
+F 3 "" H 9150 5600 60  0000 C CNN
+	1    9150 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 5600 9150 5400
+Connection ~ 9150 5400
+Wire Wire Line
+	9150 5400 9500 5400
+$Comp
+L Connector:Conn_01x01_Male J2
+U 1 1 60247F16
+P 5900 2450
+F 0 "J2" V 6054 2362 50  0000 R CNN
+F 1 "Conn_01x01_Male" V 5963 2362 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5900 2450 50  0001 C CNN
+F 3 "~" H 5900 2450 50  0001 C CNN
+	1    5900 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5600 2150 5900 2150
+Wire Wire Line
+	5900 2150 5900 2250
+$Comp
+L Device:Jumper JP1
+U 1 1 60248E00
+P 2100 4250
+F 0 "JP1" H 2100 4514 50  0000 C CNN
+F 1 "Jumper" H 2100 4423 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2100 4250 50  0001 C CNN
+F 3 "~" H 2100 4250 50  0001 C CNN
+	1    2100 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper JP2
+U 1 1 60249966
+P 9800 2950
+F 0 "JP2" H 9800 3214 50  0000 C CNN
+F 1 "Jumper" H 9800 3123 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9800 2950 50  0001 C CNN
+F 3 "~" H 9800 2950 50  0001 C CNN
+	1    9800 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L PCB_TP_Prof-rescue:GND #PWR0102
+U 1 1 6024A1B2
+P 5900 1650
+F 0 "#PWR0102" H 5900 1650 30  0001 C CNN
+F 1 "GND" H 5900 1580 30  0001 C CNN
+F 2 "" H 5900 1650 60  0000 C CNN
+F 3 "" H 5900 1650 60  0000 C CNN
+	1    5900 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 1650 5900 1600
+Wire Wire Line
+	5900 1600 5600 1600
+$Comp
+L Connector:Conn_01x04_Female J1
+U 1 1 602EEF3B
+P 3750 1800
+F 0 "J1" H 3642 2085 50  0000 C CNN
+F 1 "Conn_01x04_Female" H 3642 1994 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3750 1800 50  0001 C CNN
+F 3 "~" H 3750 1800 50  0001 C CNN
+	1    3750 1800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 1700 4150 1700
+Wire Wire Line
+	4150 1700 4150 1600
+Wire Wire Line
+	4150 1600 4400 1600
+Wire Wire Line
+	3950 1800 4150 1800
+Wire Wire Line
+	4150 1800 4150 1750
+Wire Wire Line
+	4150 1750 4400 1750
+Wire Wire Line
+	3950 1900 4400 1900
+Wire Wire Line
+	3950 2000 4150 2000
+Wire Wire Line
+	4150 2000 4150 2050
+Wire Wire Line
+	4150 2050 4400 2050
+$Sheet
+S 6000 3400 1000 2700
+U 578568DA
+F0 "Conector-EDU_CIAA" 60
+F1 "Conector.sch" 60
+F2 "I2C_SDA" B L 6000 3500 50 
+F3 "I2C_SCL" B L 6000 3600 50 
+F4 "LCD_EN" O L 6000 3700 50 
+F5 "GPIO0" B L 6000 3850 50 
+F6 "GPIO2" B L 6000 3950 50 
+F7 "GPIO4" B L 6000 4100 50 
+F8 "GPIO6" B L 6000 4200 50 
+F9 "GPIO3" B L 6000 4300 50 
+F10 "GPIO5" B L 6000 4400 50 
+F11 "GPIO7" B L 6000 4550 50 
+F12 "GPIO8" B L 6000 4700 50 
+F13 "RXD0" I R 7000 3700 50 
+$EndSheet
+$EndSCHEMATC
