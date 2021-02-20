@@ -69,56 +69,17 @@ $EndComp
 Text HLabel 3200 3400 0    60   Output ~ 0
 LCD_EN
 Wire Wire Line
-	3200 3400 3450 3400
-Wire Wire Line
-	2600 2400 3450 2400
-Wire Wire Line
-	2600 2500 3450 2500
-Wire Wire Line
-	2600 2600 3450 2600
-Wire Wire Line
-	2600 2800 3450 2800
-Wire Wire Line
-	2600 2900 3450 2900
-Wire Wire Line
-	2600 3100 3450 3100
-Wire Wire Line
-	2600 3200 3450 3200
-Wire Wire Line
-	2600 3500 3450 3500
-Wire Wire Line
-	2600 3600 3450 3600
-Wire Wire Line
 	2600 4100 3450 4100
 Wire Wire Line
 	2600 4200 3450 4200
-$Comp
-L PCB_TP_Prof-rescue:Conn_Poncho2P_2x_20x2 XA1
-U 2 1 5785D5D9
-P 3700 2600
-F 0 "XA1" H 4000 3000 60  0000 C CNN
-F 1 "Conn_Poncho2P_2x_20x2" H 4050 900 60  0000 C CNN
-F 2 "celda:Conn_Poncho_SinBorde" H 3700 2600 60  0001 C CNN
-F 3 "" H 3700 2600 60  0000 C CNN
-	2    3700 2600
-	1    0    0    -1  
-$EndComp
 Text HLabel 3200 3700 0    50   BiDi ~ 0
 GPIO0
-Wire Wire Line
-	3200 3700 3450 3700
 Text HLabel 3200 3800 0    50   BiDi ~ 0
 GPIO2
 Text HLabel 3200 3900 0    50   BiDi ~ 0
 GPIO4
 Text HLabel 3200 4000 0    50   BiDi ~ 0
 GPIO6
-Wire Wire Line
-	3200 3800 3450 3800
-Wire Wire Line
-	3200 3900 3450 3900
-Wire Wire Line
-	3200 4000 3450 4000
 Text HLabel 4900 3900 2    50   BiDi ~ 0
 GPIO3
 Text HLabel 4900 4000 2    50   BiDi ~ 0
@@ -130,8 +91,6 @@ GPIO8
 Text HLabel 3200 2700 0    50   Input ~ 0
 RXD0
 Wire Wire Line
-	3200 2700 3450 2700
-Wire Wire Line
 	4650 3800 4900 3800
 Wire Wire Line
 	4650 3900 4900 3900
@@ -140,38 +99,8 @@ Wire Wire Line
 Wire Wire Line
 	4650 4100 4900 4100
 NoConn ~ 3450 3000
-$Comp
-L PCB_TP_Prof-rescue:+3.3V #PWR?
-U 1 1 602D0597
-P 3350 2200
-AR Path="/602D0597" Ref="#PWR?"  Part="1" 
-AR Path="/578568DA/602D0597" Ref="#PWR0103"  Part="1" 
-F 0 "#PWR0103" H 3350 2050 50  0001 C CNN
-F 1 "+3.3V" H 3350 2340 50  0000 C CNN
-F 2 "" H 3350 2200 50  0000 C CNN
-F 3 "" H 3350 2200 50  0000 C CNN
-	1    3350 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3450 2300 3350 2300
-Wire Wire Line
-	3350 2300 3350 2200
-$Comp
-L PCB_TP_Prof-rescue:+5V #PWR0104
-U 1 1 602D25AB
-P 4900 2200
-F 0 "#PWR0104" H 4900 2050 50  0001 C CNN
-F 1 "+5V" H 4900 2340 50  0000 C CNN
-F 2 "" H 4900 2200 60  0000 C CNN
-F 3 "" H 4900 2200 60  0000 C CNN
-	1    4900 2200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4650 2300 4900 2300
-Wire Wire Line
-	4900 2300 4900 2200
 Wire Wire Line
 	4650 4200 4900 4200
 NoConn ~ 4650 3300
@@ -190,17 +119,6 @@ F 1 "GND" H 9200 4200 50  0000 C CNN
 F 2 "" H 9200 4350 60  0000 C CNN
 F 3 "" H 9200 4350 60  0000 C CNN
 	1    9200 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L PCB_TP_Prof-rescue:+5V #PWR018
-U 1 1 5785D61E
-P 8950 2100
-F 0 "#PWR018" H 8950 1950 50  0001 C CNN
-F 1 "+5V" H 8950 2240 50  0000 C CNN
-F 2 "" H 8950 2100 60  0000 C CNN
-F 3 "" H 8950 2100 60  0000 C CNN
-	1    8950 2100
 	1    0    0    -1  
 $EndComp
 Text HLabel 7350 3200 0    60   BiDi ~ 0
@@ -246,27 +164,6 @@ Wire Wire Line
 	8800 3800 9200 3800
 Wire Wire Line
 	8800 4100 9200 4100
-Wire Wire Line
-	8950 2100 8950 2300
-Wire Wire Line
-	8950 2300 8800 2300
-Wire Wire Line
-	7300 2050 7300 2300
-Wire Wire Line
-	7300 2300 7600 2300
-$Comp
-L PCB_TP_Prof-rescue:+3.3V #PWR020
-U 1 1 578EC122
-P 7300 2050
-AR Path="/578EC122" Ref="#PWR020"  Part="1" 
-AR Path="/578568DA/578EC122" Ref="#PWR020"  Part="1" 
-F 0 "#PWR020" H 7300 1900 50  0001 C CNN
-F 1 "+3.3V" H 7300 2190 50  0000 C CNN
-F 2 "" H 7300 2050 50  0000 C CNN
-F 3 "" H 7300 2050 50  0000 C CNN
-	1    7300 2050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9200 4200 9200 4350
 Connection ~ 9200 3200
@@ -339,4 +236,63 @@ Wire Wire Line
 	7350 3500 7600 3500
 NoConn ~ 7600 3700
 NoConn ~ 7600 3600
+Text HLabel 3200 2300 0    50   UnSpc ~ 0
++3.3V_P2
+Text HLabel 4900 2300 2    50   UnSpc ~ 0
++5V_P2
+Text HLabel 9050 2300 2    50   UnSpc ~ 0
++5V_P1
+Text HLabel 7350 2300 0    50   UnSpc ~ 0
++3.3V_P1
+Wire Wire Line
+	7600 2300 7350 2300
+Wire Wire Line
+	8800 2300 9050 2300
+Wire Wire Line
+	3200 4000 3450 4000
+Wire Wire Line
+	3200 3900 3450 3900
+Wire Wire Line
+	3200 3800 3450 3800
+Wire Wire Line
+	3200 3700 3450 3700
+Wire Wire Line
+	2600 3600 3450 3600
+Wire Wire Line
+	2600 3500 3450 3500
+Wire Wire Line
+	3200 3400 3450 3400
+Wire Wire Line
+	2600 3200 3450 3200
+Wire Wire Line
+	2600 3100 3450 3100
+Wire Wire Line
+	2600 2900 3450 2900
+Wire Wire Line
+	2600 2800 3450 2800
+Wire Wire Line
+	3200 2700 3450 2700
+Wire Wire Line
+	2600 2600 3450 2600
+Wire Wire Line
+	2600 2500 3450 2500
+Wire Wire Line
+	2600 2400 3450 2400
+$Comp
+L PCB_TP_Prof-rescue:Conn_Poncho2P_2x_20x2 XA1
+U 2 1 5785D5D9
+P 3700 2600
+F 0 "XA1" H 4000 3000 60  0000 C CNN
+F 1 "Conn_Poncho2P_2x_20x2" H 4050 900 60  0000 C CNN
+F 2 "celda:Conn_Poncho_SinBorde" H 3700 2600 60  0001 C CNN
+F 3 "" H 3700 2600 60  0000 C CNN
+	2    3700 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2300 3450 2300
+Text HLabel 9450 4200 2    50   UnSpc ~ 0
+GND
+Wire Wire Line
+	9450 4200 9200 4200
 $EndSCHEMATC
