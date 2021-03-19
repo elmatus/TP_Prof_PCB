@@ -110,94 +110,22 @@ Wire Wire Line
 	6100 3250 6600 3250
 Wire Wire Line
 	6250 3050 6100 3050
-Wire Wire Line
-	4300 3050 4500 3050
 Connection ~ 4500 3050
-$Comp
-L Device:Jumper JP3
-U 1 1 602A1CFC
-P 4000 3050
-F 0 "JP3" H 4000 2825 50  0000 C CNN
-F 1 "Jumper" H 4000 2916 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4000 3050 50  0001 C CNN
-F 3 "~" H 4000 3050 50  0001 C CNN
-	1    4000 3050
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	3900 3250 4900 3250
 Text HLabel 3500 3050 0    50   UnSpc ~ 0
 RST
-$Comp
-L Device:Jumper JP8
-U 1 1 602A41EE
-P 6850 4550
-F 0 "JP8" H 6850 4814 50  0000 C CNN
-F 1 "Jumper" H 6850 4723 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6850 4550 50  0001 C CNN
-F 3 "~" H 6850 4550 50  0001 C CNN
-	1    6850 4550
-	1    0    0    -1  
-$EndComp
 Connection ~ 6550 4550
 Text HLabel 7300 4550 2    50   UnSpc ~ 0
 GND
-Wire Wire Line
-	7300 4550 7150 4550
-$Comp
-L Device:Jumper JP6
-U 1 1 602A4FFD
-P 6800 3150
-F 0 "JP6" H 6800 3414 50  0000 C CNN
-F 1 "Jumper" H 6800 3323 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6800 3150 50  0001 C CNN
-F 3 "~" H 6800 3150 50  0001 C CNN
-	1    6800 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper JP7
-U 1 1 602A55FF
-P 6800 3350
-F 0 "JP7" H 6800 3614 50  0000 C CNN
-F 1 "Jumper" H 6800 3523 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6800 3350 50  0001 C CNN
-F 3 "~" H 6800 3350 50  0001 C CNN
-	1    6800 3350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6100 3150 6500 3150
-Wire Wire Line
-	6500 3350 6100 3350
 Text HLabel 7250 3150 2    50   Output ~ 0
 TX
-Wire Wire Line
-	7250 3150 7100 3150
 Text HLabel 7250 3350 2    50   Input ~ 0
 RX
 Wire Wire Line
-	7250 3350 7100 3350
-Wire Wire Line
 	5500 2000 5500 2850
-$Comp
-L Device:Jumper JP5
-U 1 1 602AA9BE
-P 6550 2800
-F 0 "JP5" H 6550 3064 50  0000 C CNN
-F 1 "Jumper" H 6550 2973 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6550 2800 50  0001 C CNN
-F 3 "~" H 6550 2800 50  0001 C CNN
-	1    6550 2800
-	1    0    0    -1  
-$EndComp
-Connection ~ 6250 2800
-Wire Wire Line
-	6250 2800 6250 3050
 Text HLabel 7250 2800 2    50   BiDi ~ 0
-GPIO0
-Wire Wire Line
-	7250 2800 6850 2800
+GPIO0-D3
 NoConn ~ 4900 3450
 NoConn ~ 4900 3650
 NoConn ~ 4900 3750
@@ -211,25 +139,8 @@ NoConn ~ 6100 3750
 NoConn ~ 6100 3650
 NoConn ~ 6100 3550
 NoConn ~ 6100 3450
-$Comp
-L Device:Jumper JP4
-U 1 1 602B56ED
-P 5950 1550
-F 0 "JP4" H 5950 1814 50  0000 C CNN
-F 1 "Jumper" H 5950 1723 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5950 1550 50  0001 C CNN
-F 3 "~" H 5950 1550 50  0001 C CNN
-	1    5950 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6400 1550 6250 1550
-Wire Wire Line
-	5650 1550 5500 1550
 Wire Wire Line
 	5500 1550 5500 2000
-Wire Wire Line
-	3500 3050 3700 3050
 Wire Wire Line
 	3900 2000 4500 2000
 Wire Wire Line
@@ -256,26 +167,15 @@ Wire Wire Line
 Connection ~ 6250 2000
 Wire Wire Line
 	6250 2000 6600 2000
-$Comp
-L Switch:SW_MEC_5G SW1
-U 1 1 602D82D0
-P 4150 3750
-F 0 "SW1" H 4150 4035 50  0000 C CNN
-F 1 "SW_MEC_5G" H 4150 3944 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm" H 4150 3950 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 4150 3950 50  0001 C CNN
-	1    4150 3750
-	1    0    0    -1  
-$EndComp
 Connection ~ 5500 4550
 Wire Wire Line
 	5500 4550 6000 4550
 Wire Wire Line
-	4350 3750 4500 3750
+	4350 3750 4400 3750
 Wire Wire Line
 	4500 3050 4500 3750
 Wire Wire Line
-	3950 3750 3800 3750
+	3950 3750 3900 3750
 Wire Wire Line
 	3800 3750 3800 4550
 Wire Wire Line
@@ -286,7 +186,7 @@ U 1 1 602DC686
 P 4500 4150
 F 0 "C4" H 4615 4196 50  0000 L CNN
 F 1 "100nF" H 4615 4105 50  0000 L CNN
-F 2 "" H 4538 4000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 4538 4000 50  0001 C CNN
 F 3 "~" H 4500 4150 50  0001 C CNN
 	1    4500 4150
 	1    0    0    -1  
@@ -299,26 +199,9 @@ Wire Wire Line
 Connection ~ 4500 4550
 Wire Wire Line
 	4500 4550 5500 4550
-Text Notes 4050 3900 0    50   ~ 0
+Text Notes 4050 3950 0    50   ~ 0
 RESET\n
-$Comp
-L Switch:SW_MEC_5G SW2
-U 1 1 602DE06C
-P 7300 2600
-F 0 "SW2" H 7300 2885 50  0000 C CNN
-F 1 "SW_MEC_5G" H 7300 2794 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm" H 7300 2800 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 7300 2800 50  0001 C CNN
-	1    7300 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7100 2600 6250 2600
 Connection ~ 6250 2600
-Wire Wire Line
-	6250 2600 6250 2800
-Wire Wire Line
-	7500 2600 7750 2600
 Wire Wire Line
 	7750 2600 7750 4750
 Wire Wire Line
@@ -327,4 +210,79 @@ Wire Wire Line
 	6550 4750 6550 4550
 Text Notes 7200 2700 0    50   ~ 0
 FLASH\n
+Text Notes 2500 2950 0    50   ~ 0
+Conectarlo al RST del \nNodeMCU para programarlo
+Text Notes 7850 3300 0    50   ~ 0
+Conectarlo a TX y RX del \nNodeMCU para programarlo
+Wire Wire Line
+	7500 2600 7550 2600
+Wire Wire Line
+	7100 2600 7050 2600
+$Comp
+L Switch:SW_MEC_5E SW2
+U 1 1 6053E81A
+P 7300 2600
+F 0 "SW2" H 7300 2985 50  0000 C CNN
+F 1 "SW_MEC_5E" H 7300 2894 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 7300 2900 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 7300 2900 50  0001 C CNN
+	1    7300 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2500 7050 2500
+Wire Wire Line
+	7050 2500 7050 2600
+Connection ~ 7050 2600
+Wire Wire Line
+	7050 2600 6250 2600
+Wire Wire Line
+	7500 2500 7550 2500
+Wire Wire Line
+	7550 2500 7550 2600
+Connection ~ 7550 2600
+Wire Wire Line
+	7550 2600 7750 2600
+$Comp
+L Switch:SW_MEC_5E SW1
+U 1 1 60540E1F
+P 4150 3650
+F 0 "SW1" H 4150 3425 50  0000 C CNN
+F 1 "SW_MEC_5E" H 4150 3516 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 4150 3950 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 4150 3950 50  0001 C CNN
+	1    4150 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3950 3650 3900 3650
+Wire Wire Line
+	3900 3650 3900 3750
+Connection ~ 3900 3750
+Wire Wire Line
+	3900 3750 3800 3750
+Wire Wire Line
+	4350 3650 4400 3650
+Wire Wire Line
+	4400 3650 4400 3750
+Connection ~ 4400 3750
+Wire Wire Line
+	4400 3750 4500 3750
+Wire Wire Line
+	3500 3050 4500 3050
+Wire Wire Line
+	5500 1550 6400 1550
+Wire Wire Line
+	6550 4550 7300 4550
+Wire Wire Line
+	6100 3150 7250 3150
+Wire Wire Line
+	6100 3350 7250 3350
+Wire Wire Line
+	6250 2600 6250 2800
+Wire Wire Line
+	6250 2800 7250 2800
+Connection ~ 6250 2800
+Wire Wire Line
+	6250 2800 6250 3050
 $EndSCHEMATC

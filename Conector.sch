@@ -52,8 +52,6 @@ NoConn ~ 4650 2900
 NoConn ~ 4650 2800
 NoConn ~ 4650 2700
 NoConn ~ 4650 2600
-NoConn ~ 4650 2500
-NoConn ~ 4650 2400
 NoConn ~ 3450 3300
 $Comp
 L PCB_TP_Prof-rescue:GND #PWR019
@@ -128,11 +126,6 @@ I2C_SCL
 NoConn ~ 7600 2400
 NoConn ~ 7600 2500
 NoConn ~ 7600 2600
-NoConn ~ 7600 4200
-NoConn ~ 7600 4100
-NoConn ~ 7600 4000
-NoConn ~ 7600 3900
-NoConn ~ 7600 3800
 NoConn ~ 8800 4000
 NoConn ~ 8800 3900
 NoConn ~ 8800 3100
@@ -234,8 +227,6 @@ Wire Wire Line
 	7350 3400 7600 3400
 Wire Wire Line
 	7350 3500 7600 3500
-NoConn ~ 7600 3700
-NoConn ~ 7600 3600
 Text HLabel 3200 2300 0    50   UnSpc ~ 0
 +3.3V_P2
 Text HLabel 4900 2300 2    50   UnSpc ~ 0
@@ -295,4 +286,40 @@ Text HLabel 9450 4200 2    50   UnSpc ~ 0
 GND
 Wire Wire Line
 	9450 4200 9200 4200
+Text HLabel 7350 3800 0    50   BiDi ~ 0
+T_COL1-GPIO30
+Wire Wire Line
+	7350 3800 7600 3800
+Text HLabel 7350 3900 0    50   BiDi ~ 0
+T_FIL0-GPIO25
+Wire Wire Line
+	7350 3900 7600 3900
+Text HLabel 7350 4200 0    50   BiDi ~ 0
+T_COL0-GPIO29
+Wire Wire Line
+	7350 4200 7600 4200
+Text HLabel 7350 4100 0    50   BiDi ~ 0
+T_FIL2-GPIO27
+Wire Wire Line
+	7350 4100 7600 4100
+Text HLabel 7350 4000 0    50   BiDi ~ 0
+T_FIL3-GPIO28
+Wire Wire Line
+	7350 4000 7600 4000
+Text HLabel 7350 3600 0    50   BiDi ~ 0
+CAN_RD-GPIO33
+Wire Wire Line
+	7350 3600 7600 3600
+Text HLabel 7350 3700 0    50   BiDi ~ 0
+CAN_TD-GPIO32
+Wire Wire Line
+	7350 3700 7600 3700
+Text HLabel 4900 2400 2    50   BiDi ~ 0
+RXD1-GPIO21
+Wire Wire Line
+	4900 2400 4650 2400
+Text HLabel 4900 2500 2    50   BiDi ~ 0
+TX_EN-GPIO19
+Wire Wire Line
+	4900 2500 4650 2500
 $EndSCHEMATC
