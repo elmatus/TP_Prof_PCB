@@ -128,7 +128,6 @@ NoConn ~ 7600 2500
 NoConn ~ 7600 2600
 NoConn ~ 8800 4000
 NoConn ~ 8800 3900
-NoConn ~ 8800 3100
 NoConn ~ 8800 3000
 NoConn ~ 8800 2900
 NoConn ~ 8800 2800
@@ -322,4 +321,8 @@ Text HLabel 4900 2500 2    50   BiDi ~ 0
 TX_EN-GPIO19
 Wire Wire Line
 	4900 2500 4650 2500
+Text HLabel 8900 3100 2    50   UnSpc ~ 0
+GNDA
+Wire Wire Line
+	8900 3100 8800 3100
 $EndSCHEMATC
