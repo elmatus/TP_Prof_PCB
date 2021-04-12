@@ -6,5 +6,5 @@ Al shield se le conectan un sensor de presión, fabricado con [velostat](https:/
 ![](https://github.com/elmatus/TP_Prof_PCB/blob/acbc4da2ac62bc1c1a39bb9089810b2e2910a562/pcb_3d.PNG)
 
 <p align="center">
-  <img width="460" height="300" src="https://github.com/elmatus/TP_Prof_PCB/blob/acbc4da2ac62bc1c1a39bb9089810b2e2910a562/pcb_3d.PNG">
+  <img src="https://github.com/elmatus/TP_Prof_PCB/blob/acbc4da2ac62bc1c1a39bb9089810b2e2910a562/pcb_3d.PNG">
 </p>
