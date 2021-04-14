@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 4
-Title ""
-Date ""
+Title "Plataforma de salto para deportistas de alto rendimiento. "
+Date "13-04-2021"
 Rev ""
-Comp ""
+Comp "FIUBA"
 Comment1 ""
 Comment2 ""
 Comment3 ""

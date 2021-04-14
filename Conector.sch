@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 4
-Title "Diagrama de conectores, para acoplar con la EDU-CIAA."
-Date "2016-07-04"
+Title "Plataforma de salto para deportistas de alto rendimiento. "
+Date "13-04-2021"
 Rev ""
-Comp "Felipe Rey Hernandez"
-Comment1 "Esquematico de modulos para poncho celda para el curso de Diseño de PCB del CESE."
-Comment2 "Licencia GPL V3"
+Comp "FIUBA"
+Comment1 ""
+Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
